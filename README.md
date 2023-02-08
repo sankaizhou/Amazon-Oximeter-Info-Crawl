@@ -1,5 +1,5 @@
 # Amazon-Oximeter-Info-Crawl
-Crawl Oximeter Info including product title, price, rating for data analysis
+This project is an simple example of showing how to crawl Amazon product Info including product title, price, rating for data analysis. We'll use the Python codes to crawl all the oximeter info on Amazon.
 # Import required libraries
 ```
 from bs4 import BeautifulSoup  
@@ -48,7 +48,7 @@ def get_rating(new_soup):
 if __name__=='__main__':
     URL= "https://www.amazon.com/s?k=%E8%A1%80%E6%B0%A7%E4%BB%AA&crid=3DMNBW0O40O1Q&sprefix=xue%27yang%27yi%2Caps%2C139&ref=nb_sb_noss"
 
-    ''''Headers for request'''
+   '''Headers for request'''
     HEADERS = ({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
                'Accept-Language': 'en-US, en;q=0.5'
                })
